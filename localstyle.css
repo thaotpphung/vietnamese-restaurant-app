@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+#homepage {
+  background-image: url("assets/restaurant.jpg");
+  font: 25px "Times New Roman", Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-size: 14pt;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+/*home*/
+#wrapper {
+  width: 70%;
+  min-width: 1008px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#heading {
+  height: 150px;
+  padding: 15px 15px 5px 15px;
+  color: #381903;
+}
+
+#heading h1 {
+  font-family: cursive, Optima, "Times New Roman", Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 0px;
+  height: 100px;
+}
+
+#heading h2 {
+  font-family: cursive, Optima, "Times New Roman", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+#navbar {
+  background-color: #c4edbe;
+  font: 1.1em Times, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 13px 16px;
+}
+
+#navbar li a:hover {
+  background-color: #44853a;
+  color: white;
+}
+
+#content {
+  font: 1.3em/1.4 "Times New Roman", Arial, Helvetica, sans-serif;
+  height: 700px;
+  font-size: 16pt;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#foodmenu {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+}
+.fooditem {
+  float: left;
+  width: 30%;
+  margin: 0.54em;
+  text-align: center;
+}
+
+.food {
+  height: 200px;
+  width: 303px;
+}
+
+.captionbox {
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.captionbox p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*menu*/
+#menuhomepage {
+  background-image: url("assets/restaurant.jpg");
+  font: 25px "Times New Roman", Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-size: 14pt;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 550px;
+}
+
+#menu {
+  padding-top: 10px;
+}
+
+table.menu,
+#hours table {
+  width: 100%;
+  text-align: center;
+  border-color: black black black black;
+  border-collapse: separate;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#menu td {
+  text-align: center;
+}
+
+#menu table,
+#menu th,
+#menu td {
+  border: 1px solid black;
+}
+
+#menu table td {
+  text-align: center;
+  padding: 0px 9px;
+}
+
+#menu table th {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.foodpicture {
+  height: 140px;
+  width: 160px;
+  padding-top: 9px;
+  margin: 0px;
+}
+
+#orderinfo {
+  width: 100%;
+  margin: 14px 0px 10px 0px;
+  /* padding: 15px; */
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid black;
+}
+
+#address {
+  padding-top: 20px;
+  padding-left: 20px;
+  float: left;
+  width: 48%;
+}
+
+#payment {
+  overflow: hidden;
+  padding-left: 50px;
+  padding-top: 20px;
+  border-left: 1px solid black;
+}
+
+#submitorder {
+  text-align: center;
+}
+
+.submitbutton {
+  width: 20%;
+  height: 25%;
+  font: 20px "Times New Roman", Arial, Helvetica, sans-serif;
+}
+
+input[type="number"] {
+  width: 35px;
+}
+
+/* process order */
+#orderhomepage {
+  background-image: url("assets/restaurant.jpg");
+  font: 25px "Times New Roman", Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-size: 14pt;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+#confirmorder {
+  width: 100%;
+  min-width: 1008px;
+  margin: 14px 0px 0px 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  height: 51%;
+}
+
+#customeraddress {
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+}
+
+#ordertotal {
+  /* padding-top: 10px; */
+  border-top: 1px solid black;
+  text-align: center;
+  /* width: 100%; */
+  height: 100%;
+  /* height: 200px; */
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#total {
+  width: 52%;
+  /* width: 523px; */
+  float: left;
+  /* margin-bottom: 0px; */
+  /* padding-bottom: 0; */
+  border-right: 1px solid black;
+  /* height: 100%; */
+  overflow: hidden;
+}
+
+#total td {
+  text-align: center;
+}
+
+table.total {
+  width: 100%;
+  border: 1px solid black;
+  /* border-bottom: none; */
+  border-left: none;
+  border-right: none;
+  /* height: 171px; */
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+table.total th,
+table.total td {
+  border: 1px solid black;
+}
+
+#finalinfo {
+  /* width: 462px; */
+  width: 47.8%;
+  /* float: right; */
+  height: 100%;
+  overflow: hidden;
+}
+
+#finalinfo p {
+  padding-top: 20px;
+}
+
+/*contact*/
+#contact {
+  height: 25%;
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 30px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*hours*/
+#hours {
+  padding-top: 10px;
+}
+.breakfast .dinner .lunch {
+  font-size: 20px;
+}
+
+.breakfast {
+  background-color: #fae8a0;
+}
+
+.lunch {
+  background-color: #bfedaf;
+}
+
+.dinner {
+  background-color: #afedea;
+}
+
+#hours td,
+#hours th {
+  vertical-align: middle;
+  border-width: 1px 1px 1px 1px;
+  padding: 1px 1px 1px 1px;
+  border-style: solid solid solid solid;
+  border-color: black black black black;
+}
+
+/*annotation*/
+#annotationbody {
+  background-color: #f2e4f0;
+}
+#annotationh1 {
+  text-align: center;
+}
+
+#annotationwrap {
+  width: 70%;
+  font-size: 20px;
+  min-width: 1008px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 35px;
+}
+
+#annothead {
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 25px;
+}

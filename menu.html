@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Pholicious</title>
+  <link href="localstyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="menuhomepage">
+  <div id="wrapper">
+    <div id="mashead">
+      <div id="heading">
+        <h1>Pholicious</h1>
+        <h2>Authentic Vietnamese Cuisine</h2>
+      </div>
+      <div id="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hours.html">Hours</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="intro">
+        <h3>
+          We proudly serve the best quality, most authentic Vietnamese food in
+          town.
+        </h3>
+      </div>
+
+      <form action="menu.php" method="post">
+        <div id="menu">
+          <table class="menu">
+            <thead>
+              <tr>
+                <th>Picture</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Vegan</th>
+                <th>Unit Price</th>
+                <th>Quantity Ordered</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="assets/nemnuong.jpg" alt="nem nuong" class="foodpicture" />
+                </td>
+                <td>Nem Nuong</td>
+                <td>Appetizer</td>
+                <td>Vietnamese grilled pork sausage</td>
+                <td>&#x2715;</td>
+                <td>$5</td>
+                <td>
+                  <input type="number" name="nemnuong" min="0" max="100" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src=" assets/banhcuon.jpg" alt="banh cuon" class="foodpicture" />
+                </td>
+                <td>Banh Cuon</td>
+                <td>Main Dish</td>
+                <td>Vietnamese Vegetarian Steamed Rice Rolls</td>
+                <td>&#x2713;</td>
+                <td>$7</td>
+                <td>
+                  <!-- <input type="text" name="banhcuon" size="3" pattern="\d(\d)" title="Must be from 0 - 99" /> -->
+                  <input type="number" name="banhcuon" min="0" max="100" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/pho.jpeg" alt="pho" class="foodpicture" />
+                </td>
+                <td>Pho</td>
+                <td>Main Dish</td>
+                <td>
+                  Vietnamese soup consisting of broth, rice noodles, herbs,
+                  and beef
+                </td>
+                <td>&#x2715;</td>
+                <td>$8</td>
+                <td>
+                  <!-- <input type="text" name="pho" size="3" maxlength="2" min="0" /> -->
+                  <input type="number" name="pho" min="0" max="100" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/chebamau.jpg" alt="che ba mau" class="foodpicture" />
+                </td>
+                <td>Che Ba Mau</td>
+                <td>Dessert</td>
+                <td>A coconut milk soup base with beans and jelly</td>
+                <td>&#x2713;</td>
+                <td>$5</td>
+                <td>
+                  <!-- <input type="text" name="chebamau" size="3" maxlength="2" min="0" /> -->
+                  <input type="number" name="chebamau" min="0" max="100" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="orderinfo">
+          <div id="address">
+            <h3>Customer's Address</h3>
+            <table class="address">
+              <tr>
+                <td>Customer's Name:</td>
+                <td><input type="text" name="name" size="30" maxlength="30" pattern="^[\d,\.a-zA-Z ]+$"
+                    title="Must only include alphabetic characters, digits, commas or dots" required="required" /></td>
+              </tr>
+              <tr>
+                <td>Street Address:</td>
+                <td><input type="text" name="street" size="30" maxlength="30" pattern="^[\d\.,a-zA-Z ]+$"
+                    title="Must only include alphabetic characters, digits, commas or dots" required="required" /></td>
+              </tr>
+              <tr>
+                <td>City, State, Zip:</td>
+                <td><input type="text" name="city" size="30" maxlength="30" pattern="^[\d\.,a-zA-Z ]+$"
+                    title="Must only include alphabetic characters, digits, commas or dots" required="required" /></td>
+              </tr>
+            </table>
+          </div>
+
+          <div id="payment">
+            <h3>Payment Method</h3>
+            <p>
+              <input type="radio" name="payment" value="Visa" checked="checked" />
+              Visa <br />
+              <input type="radio" name="payment" value="Mastercard" />
+              Master Card <br />
+              <input type="radio" name="payment" value="Discover" />
+              Discover <br />
+              <input type="radio" name="payment" value="Check" />
+              Check <br />
+              <br />
+            </p>
+          </div>
+        </div>
+
+        <div id="submitorder">
+          <!-- The submit and reset buttons -->
+          <input type="submit" class="submitbutton" value="Submit Order" />
+          <input type="reset" class="submitbutton" value="Clear Order Form" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
