@@ -121,6 +121,14 @@ html {
   text-align: center;
 }
 
+.zoom {
+  transition: transform .2s; /* animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+}
+
 /*menu*/
 #menuhomepage {
   background-image: url("assets/restaurant.jpg");
@@ -150,7 +158,7 @@ table.menu,
   text-align: center;
 }
 
-#menu table,
+#menu table, 
 #menu th,
 #menu td {
   border: 1px solid black;
@@ -236,24 +244,17 @@ input[type="number"] {
 }
 
 #ordertotal {
-  /* padding-top: 10px; */
   border-top: 1px solid black;
   text-align: center;
-  /* width: 100%; */
   height: 100%;
-  /* height: 200px; */
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
 #total {
   width: 52%;
-  /* width: 523px; */
   float: left;
-  /* margin-bottom: 0px; */
-  /* padding-bottom: 0; */
   border-right: 1px solid black;
-  /* height: 100%; */
   overflow: hidden;
 }
 
@@ -264,12 +265,9 @@ input[type="number"] {
 table.total {
   width: 100%;
   border: 1px solid black;
-  /* border-bottom: none; */
   border-left: none;
   border-right: none;
-  /* height: 171px; */
   height: 100%;
-  /* overflow: hidden; */
 }
 
 table.total th,
@@ -278,9 +276,7 @@ table.total td {
 }
 
 #finalinfo {
-  /* width: 462px; */
   width: 47.8%;
-  /* float: right; */
   height: 100%;
   overflow: hidden;
 }
@@ -339,6 +335,7 @@ table.total td {
 
 #annotationwrap {
   width: 70%;
+  padding-bottom: 100px;
   font-size: 20px;
   min-width: 1008px;
   height: 100%;
@@ -350,4 +347,135 @@ table.total td {
   padding-top: 30px;
   padding-left: 50px;
   font-size: 25px;
+}
+
+/* review */
+#review {
+  height: 100%;
+}
+
+#rating {
+  height: 12%;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#rating h1,
+#textReview h1 {
+  font-size: 25px;
+}
+
+#textReview {
+  height: 60%;
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#textReviewArea {
+  width: 70%;
+  height: 45%;
+}
+
+#textAreaContainer {
+  padding-top: 20px;
+  height: 100%;
+}
+
+#displayMessage {
+  padding-top: 15px;
+}
+
+.share {
+  display: block;
+}
+
+.notShare {
+  display: none;
+}
+
+#share.share::after {
+  content: '\263A';
+}
+
+/* rating system */
+/* decorate stars */
+.star{
+  color: goldenrod;
+  font-size: 2.0rem;
+  padding: 0 1rem; /* space out the stars */
+}
+
+/* add the content(which is the star) before the star div, 
+because the star div will change according to its state */
+.star::before{
+  content: '\2606';    /* blank star */
+  cursor: pointer;     /* decorate the cursor */
+}
+
+/* elements with both classes .star and .rated */
+.star.rated::before{
+  content: '\2605';  /* filled star */
+}
+
+/* increment the rating by 1 */
+.star.rated{
+  counter-increment: curr-rating 1;
+}
+
+/* decorate the whole rating box */
+.stars{
+    counter-reset: curr-rating;    /* set the initial rating to be 0 */
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+/* display the current rating */
+.stars::after{
+    content: counter(curr-rating) '/5';
+}
+
+#fav_order{
+  height: 100%;
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#input_data {
+  height: 70px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#fav_table table, #fav_table td, #fav_table tr, #fav_table th{
+  border: 1px solid black;
+  text-align: center;
+  margin: auto
+}
+
+#fav_table table {
+  width: 60%;
+}
+
+#message {
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
 }

@@ -4,6 +4,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<title>Annotation</title>
+	<script src="script.js"></script>
 	<link href="localstyle.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -12,27 +13,45 @@
 		Thao Phung <br />
 		Dr. Alan Garvey <br />
 		CS 315 <br />
-		March 4, 2020 <br />
 	</p>
 
 	<div id=annotationwrap>
 		<h1 id="annotationh1">Annotation</h1>
 		<br />
 		<p id="annotationp">
-			For this milestone, I upgraded my website so that it is possible for customers to order food.
-			I used number input fields, with the values ranging from 0 to 100 for security reasons. I let the users type
-			in their address to complete the order. These fields are required. I also checked the validity of user's
-			inputs.
-			<br />
-			After the users submit the order, I will process the order and display the order summary to the users. This
-			includes the customer's address, method of payment, the total number of items and the total amount that
-			customers need to pay.
+			For this milestone, I added a "Favorite Order" page for my website.
+			This is the first step to upgrade my website, as this would keep a list of the user's favorite dishes and well as their quantity.
+			For future plan, I plan to let users create their own accounts. If each person has his/her own favorite order, customers won't have to go 
+			though the process of ordering each of their favorite item sepately anymore, hence making the website more convenient for users.
 			<br />
 
+			I used a database to store the customer's favorite order. Users are provided with input forms. After taking the input, my program
+			uses PHP to interact with the database. In particular, inputs are cleaned to avoid HTML injection as well as SQL injection before they 
+			are added to the database, and later displayed in a table. 
+			<br />
+			In terms of HTML injection, I used the function htmlspecialchars to convert special characters to HTML entities. 
+			Regarding
+			SQL injection, I used prepared statements in PDO, which are known to be useful against SQL attack. I also check the user's 
+			input with regular expression to make sure enter the correct format.
+			<br /> <br />
+
+			Definition (CREATE TABLE sql) of my table: <br />
+            <div>
+                CREATE TABLE Menu ( <br />
+                ID INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, <br />
+                Name VARCHAR(20) NOT NULL, <br />
+                Quantity INTEGER UNSIGNED NOT NULL  <br />
+                );
+            </div>
+			
+			<br />
+			
+	
 			Here are the links to the files involved:
 			<ul>
-				<li><a href="http://ice.truman.edu/~ttp7428/milestone2/menu.phps">menu.phps</a></li>
-				<li>The <a href="http://ice.truman.edu/~ttp7428/milestone2/">milestone2</a> directory</li>
+				<li>The <a href="http://ice.truman.edu/~ttp7428/milestone4/">milestone4</a> directory</li>
+				<li><a href="http://ice.truman.edu/~ttp7428/milestone4/fav.php">fav.php</a></li>
+				<li><a href="http://ice.truman.edu/~ttp7428/milestone4/fav.phps">fav.phps</a></li>
 			</ul>
 	</div>
 

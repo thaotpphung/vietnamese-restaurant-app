@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Pholicious</title>
+    <script src="script.js"></script>
+    <link href="localstyle.css" type="text/css" rel="stylesheet">
+</head>
+
+<body id="homepage">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+    <div id="wrapper">
+        <div id="mashead">
+            <div id="heading">
+                <h1>Pholicious</h1>
+                <h2>Authentic Vietnamese Cuisine </h2>
+            </div>
+            <div id="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="hours.html">Hours</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="fav.php">Favorite Order</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="intro">
+                <h3>We proudly serve the best quality, most authentic Vietnamese food in town.
+                </h3>
+            </div>
+            <div id=review>
+                <div id="rating">
+                    <h1>Customer's Rating</h1>
+                    <div class="stars">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star" id="4"></span>
+                        <span class="star" id="5"></span>
+                    </div>
+                    <p></p>
+                </div>
+                <div id="textReview">
+                    <h1>Tell us how we did so we can better serve our customers</h1>
+                    <div id="textAreaContainer">
+                        <textarea name="comment" id="textReviewArea"></textarea><br />
+                        <input class="submitbutton" id="reviewButton" type="submit" value="Submit" name="submit"> <br />
+                        <div id="displayMessage">
+                            <p id="firstMessage"></p>
+                            <p id="secondMessage"></p>
+                            <div id="share" class="notShare">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=http://ice.truman.edu/~ttp7428/milestone3/home.html"
+                                    target="_blank">
+                                    Click to share with friends on Facebook
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
